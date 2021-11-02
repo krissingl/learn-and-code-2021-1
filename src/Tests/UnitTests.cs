@@ -27,16 +27,6 @@ namespace learn_and_code.Tests
             Assert.Equal(5, Add(2, 2));
         }
 
-        [Fact]
-        public void IsValidCard()
-        {
-            var testCard = new Card(Card.FacetValue.One, Card.FacetValue.Green, Card.FacetValue.Outlined, Card.FacetValue.Oval);
-            var testCardFacetValues = testCard.FacetValues();
-
-            Console.WriteLine("These are the Facet Values: " + testCardFacetValues);
-            Assert.True(testCard.IsValid());
-        }
-
         [Theory]
         [InlineData("")]
         [InlineData("card")]
